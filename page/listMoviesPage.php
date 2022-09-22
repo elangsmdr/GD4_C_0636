@@ -40,7 +40,7 @@ echo'
 <td>'.$data['season'].'</td>
 <td>
 <a href="../page/editMoviePage.php?id='.$data['id'].'"> 
-<i style="color: blue;" class="fa fa-pencil-square fa-2x"></i>
+<i style="color: blue; border: none" class="fa fa-pencil-square fa-2x"></i>
 </a>
 </td>
 <td>
