@@ -6,6 +6,9 @@ solid #D40013; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
 0.19);" >
 <div class="body d-flex justify-content-between">
 <h4>LIST MOVIE</h4>
+<a href="../page/addMoviePage.php">
+<i style="color: red; float: right;" class="fa fa-plus fa-2x"></i>
+</a>
 </div>
 <hr>
 <table class="table ">
@@ -36,6 +39,11 @@ echo'
 <td>'.$data['realese'].'</td>
 <td>'.$data['season'].'</td>
 <td>
+<a href="../page/editMoviePage.php?id='.$data['id'].'"> 
+<i style="color: blue;" class="fa fa-pencil-square fa-2x"></i>
+</a>
+</td>
+<td>
 <a href="../process/deleteMovieProcess.php?id='.$data['id'].'"onClick="return confirm ( \'Are you sure want to delete this data?\')"> <i style="color: red" class="fa fa-trash fa-2x"></i>
 </a>
 </td>
@@ -51,6 +59,7 @@ $no++;
 <script
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-crossorigin="anonymous"></script>
+crossorigin="anonymous">
+</script>
 </body>
 </html>
