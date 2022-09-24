@@ -5,7 +5,8 @@ header("location: ../page/loginPage.php");
 }else {
 include('../db.php');
 }
-echo '
+echo 
+'
 <!Doctype html>
 <html lang="en">
 <head>
